@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         path:'/get-one/:id',
         element:<Details/>,
-        loader:({params})=>fetch(`http://localhost:5000/get-one/${params.id}`)
+        loader:({params})=>fetch(`https://api.tvmaze.com/shows/${params.id}`)
 
       }
     ]

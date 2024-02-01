@@ -9,7 +9,7 @@ const DynamicCard = ({ items }) => {
 
   return (
     <div>
-      <div className="bg-gray-400 text-white lg:flex lg:justify-around rounded-lg">
+      <div className="w-[200px] bg-gray-400 lg:w-full  text-white columns-1 lg:flex lg:justify-around rounded-lg">
         <section>
           <img className="lg:w-[200px] lg:h-[200px]" src={show?.image?.original} alt="" />
 
@@ -25,7 +25,7 @@ const DynamicCard = ({ items }) => {
           <Link to={`/get-one/${show?.id}`}>
           
           <button  
-          className="lg:px-4 lg:py-2 border border-gray-800 text-gray-800 font-bold my-2">View Details</button>
+          className="px-2 lg:px-4 lg:py-2 border border-gray-800 text-gray-800 font-bold my-2 ">View Details</button>
           </Link>
           
         </section>

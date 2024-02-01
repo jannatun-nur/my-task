@@ -15,7 +15,7 @@ const Category = () => {
     return (
         <div >
 
-           <div className="columns-1 grid md:grid-cols-4 lg:grid-cols-3 gap-2 ">
+           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-2 ">
            {
                 item.map( items =><DynamicCard key={items._id} items={items}></DynamicCard>)
             }
