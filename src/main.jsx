@@ -12,6 +12,7 @@ import Layout from './Layout/Layout';
 import AuthProvider from '../public/Provider/AuthProvider';
 import SignUp from './SignUp/SignUp';
 import Signin from './Signin/Signin';
+import BookForm from './BookedForm/BookForm';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path:'/signin',
         element:<Signin/>
+      },
+      {
+        path:'/ticket',
+        element:<BookForm/>
       },
       {
         path:'/',

@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 
 const Details = () => {
@@ -15,7 +15,9 @@ const Details = () => {
             <p>{items?.country?.code}</p>
             <p>{items?.country?.timezone}</p>
           
+          <Link to='/ticket'>
           <button className="px-2 py-1 lg:px-4 lg:py-2 bg-gray-800 text-white font-bold my-4 rounded-md" >Book Ticket</button>
+          </Link>
         </div>
     );
 };
