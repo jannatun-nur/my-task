@@ -7,10 +7,10 @@ function App() {
 
 
   return (
-    <>
+    <div className='bg-white'>
     <Banner/>
       <Category/>
-    </>
+    </div>
   )
 }
 
