@@ -3,6 +3,10 @@ import logo from '../../public/assets/image/logo.png'
 import { useContext } from 'react';
 import { AuthContext } from '../../public/Provider/AuthProvider';
 const Navbar = () => {
+
+  const navlink = <>
+  <Link to= "/"><button className=' text-xs lg:text-xl px-2 py-1 lg:px-4 lg:py-2 bg-white text-gray-800 font-bold'>Home</button></Link>
+  </>
   const {user , logout} = useContext(AuthContext)
   return (
     <div>
@@ -13,7 +17,10 @@ const Navbar = () => {
    
          
           </div>
+        
           <div className="items-center flex-shrink-0 ">
+          {navlink}
+        
  {user?.email ? (
    
       <button onClick={logout} className=" text-xs lg:text-xl px-2 py-1 lg:px-4 lg:py-2 bg-white text-gray-800 font-bold">LogOut</button>
