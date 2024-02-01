@@ -1,7 +1,21 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../public/Provider/AuthProvider";
 
 
 const Details = () => {
+    const {user} = useContext(AuthContext)
+    const navigate = useNavigate()
+    const handleClick = (e) =>{
+        e.preventDefault()
+
+        if(user?.email){
+            navigate('/ticket')
+        }
+        else{
+            navigate('/signin')
+        }
+    }
     const items = useLoaderData()
     console.log(items);
     return (
@@ -15,9 +29,11 @@ const Details = () => {
             <p>{items?.country?.code}</p>
             <p>{items?.country?.timezone}</p>
           
-          <Link to='/ticket'>
-          <button className="text-xs lg:text-xl px-2 py-1 lg:px-4 lg:py-2 bg-gray-800 text-white font-bold my-4 rounded-md" >Book Ticket</button>
-          </Link>
+      
+          <button 
+          onClick={handleClick}
+          className="text-xs lg:text-xl px-2 py-1 lg:px-4 lg:py-2 bg-gray-800 text-white font-bold my-4 rounded-md" >Book Ticket</button>
+          
         </div>
     );
 };

@@ -8,12 +8,12 @@ const Banner = () => {
          <div>
          <img
             src={banner}
-            className="max-w-sm rounded-lg"
+            className="lg:w-1/2 rounded-lg w-36 mx-auto"
           />
          </div>
-          <div className="lg:w-1/2">
-            <h1 className="text-5xl font-bold">Is It Weekend!!</h1>
-            <p className="py-6 text-xs lg:text-xl font-semibold">
+          <div className="lg:w-1/2 mt-4">
+            <h1 className="text-xl lg:text-3xl font-bold">Is It Weekend!!</h1>
+            <p className="text-xs lg:text-xl font-semibold">
               What is your plan for this weekend??? Let us help 
               you to make your weekend more enjoyfull and cheerable.
               Let's start the journey with us.

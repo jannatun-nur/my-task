@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 
 const Layout = () => {
     return (
-        <div>
+        <div className="bg-white">
             <Navbar/>
             <Outlet/>
+            <Footer/>
         </div>
     );
 };
