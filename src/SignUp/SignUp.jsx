@@ -77,18 +77,18 @@ const Signup = () => {
    })
   }
   return (
-    <div className="flex flex-1 justify-around bg-white">
-      <div className=" w-48 lg:w-1/2 lg:mt-20 mt-32">
+    <div className="lg:flex columns-1 lg:justify-around bg-white">
+      <div className=" w-full lg:w-1/2 lg:mt-20 mt-32">
         <img src={gif} alt="" />
       </div>
 
-      <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10  w-1/2">
+      <div className="  mx-auto w-8/12 lg:w-1/2">
         <div className="mb-8 text-center">
           <p className="text-sm lg:text-2xl text-gray-800 font-bold">
             Sign Up to get access
           </p>
         </div>
-        <form onSubmit={handleSignUp} className="space-y-12">
+        <form onSubmit={handleSignUp} className="">
           <div className="space-y-4">
             <div>
               <div className="flex justify-between mb-2 text-white font-semibold">
@@ -143,7 +143,7 @@ const Signup = () => {
             <div>
               <button
                 type="submit"
-                className="lg:w-full px-3 lg:px-8 py-1 lg:py-3 text-xs lg:text-xl  rounded-md text-white bg-gray-800"
+                className="lg:w-full px-3 lg:px-8 py-1 lg:py-3 text-xs lg:text-xl  rounded-md text-white bg-gray-800 mt-2"
               >
                 Sign Up
               </button>

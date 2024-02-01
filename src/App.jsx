@@ -1,5 +1,6 @@
 
 import './App.css'
+import Banner from './Banner/Banner'
 import Category from './Category/Category'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+    <Banner/>
       <Category/>
     </>
   )
