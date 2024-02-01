@@ -9,9 +9,9 @@ const DynamicCard = ({ items }) => {
 
   return (
     <div>
-      <div className="w-[200px] bg-gray-400 lg:w-full  text-white columns-1 lg:flex lg:justify-around rounded-lg">
+      <div className="w-full bg-gray-400 lg:w-full  text-white columns-1 lg:flex lg:justify-around rounded-lg">
         <section>
-          <img className="lg:w-[200px] lg:h-[200px]" src={show?.image?.original} alt="" />
+          <img className="w-full h-[180px] lg:w-[200px] lg:h-[200px]" src={show?.image?.original} alt="" />
 
           <div className="flex gap-5 text-gray-800 font-semibold">
             <p className="flex">

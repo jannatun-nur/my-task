@@ -66,22 +66,22 @@ const Signin = () => {
         }
     
     return (
-        <div className="flex flex-1 justify-around bg-white">
-        <div className="w-52 lg:w-1/2 mt-32 lg:mt-20 ">
+        <div className="columns-1 lg:flex lg:justify-around bg-white">
+        <div className="w-full lg:w-1/2 mt-32 lg:mt-20 ">
           <img src={gif} alt="" />
         </div>
   
-        <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10  w-1/2">
+        <div className="w-8/12 mx-auto lg:w-1/2">
           <div className="mb-8 text-center">
             <p className="text-sm lg:text-2xl text-gray-800 font-bold">
               Sign In Here
             </p>
           </div>
-          <form onSubmit={handleSignin} className="space-y-12">
-            <div className="space-y-4">
+          <form onSubmit={handleSignin} className="">
+            <div className="">
              
               <div>
-                <label className="block mb-1 lg:mb-2 text-xs lg:text-sm text-white font-semibold">
+                <label className="block lg:mb-2 text-xs lg:text-sm text-white font-semibold">
                   Email address
                 </label>
                 <input
@@ -108,7 +108,7 @@ const Signin = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-28 lg:w-full lg:px-8 py-1 lg:py-3 text-xs lg:text-xl rounded-md bg-gray-800 text-white "
+                  className="w-28 lg:w-full lg:px-8 py-1 lg:py-3 text-xs lg:text-xl rounded-md bg-gray-800 text-white  mt-2"
                 >
                   Sign In
                 </button>

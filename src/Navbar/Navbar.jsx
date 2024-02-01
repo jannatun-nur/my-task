@@ -19,7 +19,7 @@ const Navbar = () => {
       <button onClick={logout} className=" text-xs lg:text-xl px-2 py-1 lg:px-4 lg:py-2 bg-white text-gray-800 font-bold">LogOut</button>
    
  ) : (
-    <button className="bg-white text-gray-800 font-bold"><Link to="/signin">Sign In</Link></button>
+    <button className=" text-xs lg:text-xl px-2 py-1 lg:px-4 lg:py-2 bg-white text-gray-800 font-bold"><Link to="/signin">Sign In</Link></button>
  )}
 </div>
          
